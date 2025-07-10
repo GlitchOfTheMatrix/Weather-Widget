@@ -27,7 +27,7 @@ function App() {
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
       );
       const data = await res.json();
-      console.log("API response:", data); // 👈 THIS IS IMPORTANT
+      console.log("API response:", data);
 
       if (data.cod !== 200) {
         alert(`API Error: ${data.message}`);
