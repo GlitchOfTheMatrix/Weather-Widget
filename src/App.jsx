@@ -5,13 +5,7 @@ const API_KEY = "ac84f44c2848e86e0b3ebb3366c86bcd";
 
 function App() {
   const [city, setCity] = useState("");
-  const [weather, setWeather] = useState(null);
-
-  // const fetchWeather = async () => {
-  //   if (!city) return;
-  //   try {
-  //     const res = await fetch(
-  
+  const [weather, setWeather] = useState(null);  
 
   const fetchWeather = async () => {
     if (!city) return;
