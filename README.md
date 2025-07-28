@@ -66,4 +66,3 @@ weather-widget/
 ---
 
 **Enjoy your stylish weather widget!**
-# Weather-Widget
