@@ -22,7 +22,8 @@ body {
   padding: 3rem 2rem;
   border-radius: 28px;
   backdrop-filter: blur(18px) saturate(180%);
-  box-shadow: 0 12px 40px 0 rgba(30, 144, 255, 0.18),
+  box-shadow:
+    0 12px 40px 0 rgba(30, 144, 255, 0.18),
     0 1.5px 8px 0 rgba(0, 0, 0, 0.1);
   width: 95%;
   max-width: 420px;
@@ -69,13 +70,17 @@ input {
   outline: none;
   background: rgba(255, 255, 255, 0.92);
   color: #222;
-  transition: box-shadow 0.3s, background 0.3s;
+  transition:
+    box-shadow 0.3s,
+    background 0.3s;
   box-shadow: 0 2px 8px 0 rgba(30, 144, 255, 0.1);
 }
 
 input:focus {
   background: #fff;
-  box-shadow: 0 0 0 2px #43cea2, 0 2px 8px 0 rgba(30, 144, 255, 0.1);
+  box-shadow:
+    0 0 0 2px #43cea2,
+    0 2px 8px 0 rgba(30, 144, 255, 0.1);
 }
 
 input::placeholder {
@@ -94,16 +99,56 @@ button {
   font-size: 1.05rem;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    box-shadow 0.3s;
   box-shadow: 0 2px 8px 0 rgba(30, 144, 255, 0.1);
   letter-spacing: 0.5px;
   outline: none;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+  background: #7aa9c4;
+  box-shadow: none;
 }
 
 button:hover,
 button:focus {
   background: linear-gradient(90deg, #f7971e 0%, #185a9d 100%);
   box-shadow: 0 4px 16px 0 #f7971e40;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.8rem;
+}
+
+.error-message {
+  margin-top: 0.5rem;
+  color: #ffb3b3;
+  background: rgba(255, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  padding: 0.9rem 1rem;
+  font-weight: 500;
+}
+
+.weather-description {
+  margin-top: 0.25rem;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.weather-temp {
+  margin-top: 0.8rem;
+  font-size: 2.2rem;
+  font-weight: 700;
 }
 
 /* === Weather Card === */
@@ -114,7 +159,8 @@ button:focus {
   border-radius: 22px;
   backdrop-filter: blur(12px) saturate(160%);
   animation: slideUp 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 6px 24px rgba(30, 144, 255, 0.18),
+  box-shadow:
+    0 6px 24px rgba(30, 144, 255, 0.18),
     0 1.5px 8px 0 rgba(0, 0, 0, 0.1);
   border: 1.5px solid rgba(255, 255, 255, 0.18);
   position: relative;

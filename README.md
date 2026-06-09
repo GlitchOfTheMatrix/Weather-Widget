@@ -34,7 +34,13 @@ The app will run at [http://localhost:3000](http://localhost:3000).
 
 ## 🌦️ API Key
 
-This app uses the [OpenWeatherMap API](https://openweathermap.org/api). The demo key is included for testing, but for production, [get your own API key](https://home.openweathermap.org/users/sign_up) and update the `API_KEY` in `src/App.jsx`.
+This app uses the [OpenWeatherMap API](https://openweathermap.org/api). Create a `.env` file at the project root and add your key as shown in `.env.example`:
+
+```bash
+REACT_APP_WEATHER_API_KEY=your_api_key_here
+```
+
+Then restart the development server so React picks up the environment variable.
 
 ## 🛠️ Build & Deploy
 
